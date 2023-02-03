@@ -12,9 +12,9 @@ jobs:
       - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ HOST_DNS }}
-          username: ${{ USERNAME }}
-          key: ${{ EC2_SSH_KEY }}
+          host: ${{ env.HOST_DNS }}
+          username: ${{ env.USERNAME }}
+          key: ${{ env.EC2_SSH_KEY }}
           script: |
             cd /var/www/html/github/github-pipeline
             git pull
