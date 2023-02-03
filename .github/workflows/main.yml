@@ -19,3 +19,4 @@ jobs:
           script: |
             cd /var/www/html/github/github-pipeline
             git pull
+          verbose: extra
