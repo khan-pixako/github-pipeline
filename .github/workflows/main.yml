@@ -3,7 +3,7 @@ name: Remote ssh command
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     name: Build
